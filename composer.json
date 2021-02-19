@@ -1,0 +1,48 @@
+{
+    "name": "mr687/wamazing",
+    "description": "A Wrapper Wamazing API for Laravel",
+    "keywords": [
+        "mr687",
+        "wamazing",
+        "laravel",
+        "bot",
+        "whatsapp"
+    ],
+    "homepage": "https://github.com/mr687/wamazing",
+    "license": "MIT",
+    "type": "library",
+    "authors": [{
+        "name": "Daphinokio",
+        "email": "daphinokioo@gmail.com"
+    }],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mr687\\Wamazing\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mr687\\Wamazing\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mr687\\Wamazing\\Providers\\WamazingServiceProvider"
+            ],
+            "aliases": {
+                "Wamazing": "Mr687\\Wamazing\\Facades\\Wamazing"
+            }
+        }
+    }
+}
